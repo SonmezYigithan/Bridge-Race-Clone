@@ -41,22 +41,24 @@ public class AIController : MonoBehaviour
 
     public IEnumerator GetTargets()
     {
-        if (targets.Count != 0)
-            yield break;
-
-        while(brickSpawnContainer == null)
+        if (targets.Count == 0)
         {
-            yield return new WaitForSeconds(0.5f);
-        }
-
-        yield return new WaitForSeconds(1f);
-
-        for (int i = 0; i < brickSpawnContainer.transform.childCount; i++)
-        {
-            if (Color.Equals(playerScript.playerColor, brickSpawnContainer.transform.GetChild(i).gameObject.GetComponent<Collectable>().color))
+            while (brickSpawnContainer == null)
             {
-                targets.Add(brickSpawnContainer.transform.GetChild(i).gameObject);
+                yield return new WaitForSeconds(0.5f);
             }
+
+            //yield return new WaitForSeconds(1f);
+
+            for (int i = 0; i < brickSpawnContainer.transform.childCount; i++)
+            {
+                if (Color.Equals(playerScript.playerColor, brickSpawnContainer.transform.GetChild(i).gameObject.GetComponent<Collectable>().color))
+                {
+                    targets.Add(brickSpawnContainer.transform.GetChild(i).gameObject);
+                }
+            }
+
+            haveTarget = false;
         }
     }
 
@@ -94,6 +96,11 @@ public class AIController : MonoBehaviour
 
         }
 
+    }
+
+    public void ClearTarget()
+    {
+        targetTransform = new Vector3(0,0,0);
     }
 
     private void HandleRotation()

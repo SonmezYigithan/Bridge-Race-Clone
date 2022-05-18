@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+
+        Time.timeScale = 0;
     }
 
     void Update()
@@ -36,5 +38,10 @@ public class GameManager : MonoBehaviour
     {
         winPanel.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = "Winner is " + winnerName;
         winPanel.SetActive(true);
+    }
+
+    public void StartTheGame()
+    {
+        Time.timeScale = 1;
     }
 }

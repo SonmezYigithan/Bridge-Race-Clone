@@ -28,30 +28,20 @@ public class BridgeConstructorScript : MonoBehaviour
             {
                 if (hit.transform.gameObject.GetComponent<MeshRenderer>().enabled == false)
                 {
-                    if (stackManager.isPopable())
-                    {
-                        hit.transform.gameObject.GetComponent<BridgeTileScript>().ColorBrick(playerScript.playerColorIndex);
-                        stackManager.Pop();
-                    }
-                    else
-                    {
-                        if (playerScript.isAI)
-                        {
-                            // stop and go back for collect more
-                            Debug.Log("Not Popable " + player.name);
-                            // targets empty ise GetTargets yap
-                            StartCoroutine(player.GetComponent<AIController>().GetTargets());
-                        }
-                    }
+                    HandlePopping(hit);
                 }
                 else
                 {
-                    if(hit.transform.gameObject.GetComponent<BridgeTileScript>().colorIndex != playerScript.playerColorIndex)
+                    if (hit.transform.gameObject.GetComponent<BridgeTileScript>().colorIndex != playerScript.playerColorIndex)
                     {
                         if (stackManager.isPopable())
                         {
                             hit.transform.gameObject.GetComponent<BridgeTileScript>().ColorBrick(playerScript.playerColorIndex);
                             stackManager.Pop();
+                        }
+                        else
+                        {
+
                         }
                     }
                 }
@@ -61,6 +51,29 @@ public class BridgeConstructorScript : MonoBehaviour
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 1000, Color.white);
+        }
+    }
+
+    void HandlePopping(RaycastHit hit)
+    {
+        if (stackManager.isPopable())
+        {
+            hit.transform.gameObject.GetComponent<BridgeTileScript>().ColorBrick(playerScript.playerColorIndex);
+            stackManager.Pop();
+        }
+        else
+        {
+            if (playerScript.isAI)
+            {
+                Debug.Log("Not Popable " + player.name);
+                player.GetComponent<AIController>().ClearTarget();
+                StartCoroutine(player.GetComponent<AIController>().GetTargets());
+            }
+            else
+            {
+                Debug.Log("enabled");
+                hit.transform.GetChild(0).GetComponentInChildren<BoxCollider>().enabled = true;
+            }
         }
     }
 }
