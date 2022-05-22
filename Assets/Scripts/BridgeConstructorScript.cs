@@ -9,6 +9,7 @@ public class BridgeConstructorScript : MonoBehaviour
     private StackManager stackManager;
     private GameObject player;
     private PlayerScript playerScript;
+    [SerializeField] private int bridgeIndexBiggest = 0;
 
     private void Start()
     {
@@ -19,61 +20,64 @@ public class BridgeConstructorScript : MonoBehaviour
 
     private void Update()
     {
+        HandleBridgeConstruction();
+    }
+
+    /// <summary>
+    /// Use better architecture in here
+    /// </summary>
+    void HandleBridgeConstruction()
+    {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, Mathf.Infinity))
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
-
             if (hit.transform.gameObject.tag == "BridgeTile")
             {
-                if (hit.transform.gameObject.GetComponent<MeshRenderer>().enabled == false)
+                // for handling going backwards in the middle of the bridge
+                if (bridgeIndexBiggest == 0 || bridgeIndexBiggest < int.Parse(hit.transform.gameObject.name))
                 {
-                    HandlePopping(hit);
+                    bridgeIndexBiggest = int.Parse(hit.transform.gameObject.name);
+                    hit.transform.GetChild(0).GetComponentInChildren<BoxCollider>().enabled = false;
+                }
+                else if(bridgeIndexBiggest > int.Parse(hit.transform.gameObject.name))
+                {
+                    // going backwards can pass
+                    hit.transform.GetChild(0).GetComponentInChildren<BoxCollider>().enabled = false;
+                    return;
+                }
+
+                if (stackManager.isPopable())
+                {
+                    if (hit.transform.gameObject.GetComponent<MeshRenderer>().enabled == false ||
+                        hit.transform.gameObject.GetComponent<BridgeTileScript>().colorIndex != playerScript.playerColorIndex)
+                    {
+                        hit.transform.gameObject.GetComponent<BridgeTileScript>().ColorBrick(playerScript.playerColorIndex);
+                        stackManager.Pop();
+                    }
                 }
                 else
                 {
-                    if (hit.transform.gameObject.GetComponent<BridgeTileScript>().colorIndex != playerScript.playerColorIndex)
+                    if (playerScript.isAI)
                     {
-                        if (stackManager.isPopable())
-                        {
-                            hit.transform.gameObject.GetComponent<BridgeTileScript>().ColorBrick(playerScript.playerColorIndex);
-                            stackManager.Pop();
-                        }
-                        else
-                        {
-
-                        }
+                        //Debug.Log("Not Popable " + player.name);
+                        player.GetComponent<AIController>().ClearTarget();
+                        StartCoroutine(player.GetComponent<AIController>().GetTargets());
+                    }
+                    else
+                    {
+                        //Debug.Log("enabled");
+                        hit.transform.GetChild(0).GetComponentInChildren<BoxCollider>().enabled = true;
                     }
                 }
             }
-
+            else if (hit.transform.gameObject.tag == "Floor")
+            {
+                bridgeIndexBiggest = 0;
+            }
         }
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 1000, Color.white);
-        }
-    }
-
-    void HandlePopping(RaycastHit hit)
-    {
-        if (stackManager.isPopable())
-        {
-            hit.transform.gameObject.GetComponent<BridgeTileScript>().ColorBrick(playerScript.playerColorIndex);
-            stackManager.Pop();
-        }
-        else
-        {
-            if (playerScript.isAI)
-            {
-                Debug.Log("Not Popable " + player.name);
-                player.GetComponent<AIController>().ClearTarget();
-                StartCoroutine(player.GetComponent<AIController>().GetTargets());
-            }
-            else
-            {
-                Debug.Log("enabled");
-                hit.transform.GetChild(0).GetComponentInChildren<BoxCollider>().enabled = true;
-            }
         }
     }
 }

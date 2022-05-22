@@ -7,9 +7,9 @@ public class BridgeCompleteHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Player" && GetComponent<MeshRenderer>().enabled)
-        {
-            // spawn new items
-        }
+        //if(collision.gameObject.tag == "Player" && GetComponent<MeshRenderer>().enabled)
+        //{
+        //    // spawn new items at new floor
+        //}
     }
 }

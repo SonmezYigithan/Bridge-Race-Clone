@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.08, y: 1.375, z: -2.862}
   m_LocalScale: {x: 0.1, y: 2, z: 0.1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3883333468705320144}
   m_RootOrder: 19
@@ -52,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -121,6 +123,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.053105, y: -0.45411313, z: -1.3424263}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7777455561781225923}
   - {fileID: 3883333469882810226}
@@ -146,7 +149,7 @@ Transform:
   - {fileID: 421876371781935646}
   - {fileID: 4189751692126081598}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3883333468997230934
 GameObject:
@@ -177,6 +180,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: -1.4572, y: 0.3846, z: -2.89}
   m_LocalScale: {x: 0.1, y: 5.6443973, z: 0.08925}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3883333468705320144}
   m_RootOrder: 14
@@ -200,6 +204,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -273,6 +278,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3072, y: 0.95, z: -0.86}
   m_LocalScale: {x: 11.079958, y: 1, z: 0.0986}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3883333468705320144}
   m_RootOrder: 16
@@ -296,6 +302,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -368,6 +375,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3072, y: 0.95, z: -2.69}
   m_LocalScale: {x: 11.079958, y: 1, z: 0.0986}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3883333468705320144}
   m_RootOrder: 17
@@ -391,6 +399,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -463,6 +472,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: -1.445, y: 0.39, z: -0.63}
   m_LocalScale: {x: 0.1, y: 5.632266, z: 0.1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3883333468705320144}
   m_RootOrder: 15
@@ -486,6 +496,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -559,6 +570,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.162, y: 1.375, z: -0.601}
   m_LocalScale: {x: 0.1, y: 2, z: 0.1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3883333468705320144}
   m_RootOrder: 21
@@ -582,6 +594,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -651,6 +664,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.87, y: 0.4207025, z: -1.859}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3883333468705320144}
   m_RootOrder: 0
@@ -684,6 +698,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.5184364, y: -0.035886884, z: -1.7794254}
   m_LocalScale: {x: 11.535, y: 1, z: 2.15547}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3883333468705320144}
   m_RootOrder: 22
@@ -707,6 +722,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -779,6 +795,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.08, y: 1.375, z: -0.609}
   m_LocalScale: {x: 0.1, y: 2, z: 0.1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3883333468705320144}
   m_RootOrder: 18
@@ -802,6 +819,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -874,6 +892,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.162, y: 1.375, z: -2.901}
   m_LocalScale: {x: 0.1, y: 2, z: 0.1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3883333468705320144}
   m_RootOrder: 20
@@ -897,6 +916,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -945,6 +965,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -997,9 +1018,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (4)
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &7432498100924434577 stripped
 Transform:
@@ -1011,6 +1033,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1063,9 +1086,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (5)
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &7432498101063199051 stripped
 Transform:
@@ -1077,6 +1101,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1129,9 +1154,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (10)
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &7432498101535181472 stripped
 Transform:
@@ -1143,6 +1169,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1195,9 +1222,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (3)
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &7432498101530362894 stripped
 Transform:
@@ -1209,6 +1237,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1261,9 +1290,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (9)
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &7432498099850766170 stripped
 Transform:
@@ -1275,6 +1305,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1327,15 +1358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (12)
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
---- !u!4 &7432498099840126694 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
-  m_PrefabInstance: {fileID: 3883333469653874468}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7432498099840126690 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1353,11 +1380,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be254b791caa8945b7dbbb330cb4e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &7432498099840126694 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
+  m_PrefabInstance: {fileID: 3883333469653874468}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3883333469709504980
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1410,9 +1443,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (1)
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &7432498099925133334 stripped
 Transform:
@@ -1424,6 +1458,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1476,9 +1511,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (8)
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &7432498099713679390 stripped
 Transform:
@@ -1490,6 +1526,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1542,9 +1579,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (11)
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &7432498099763733848 stripped
 Transform:
@@ -1556,6 +1594,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1608,9 +1647,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (2)
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &7432498100003601178 stripped
 Transform:
@@ -1622,6 +1662,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1674,9 +1715,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (7)
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &7432498100042322678 stripped
 Transform:
@@ -1688,6 +1730,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1740,9 +1783,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile (6)
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &7432498100210640486 stripped
 Transform:
@@ -1754,6 +1798,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 3883333468705320144}
     m_Modifications:
     - target: {fileID: 5963283311846898114, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
@@ -1802,9 +1847,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963283311846898118, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
       propertyPath: m_Name
-      value: BridgeTile
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a0a1605d2f31443a7d3c98ac29bc9d, type: 3}
 --- !u!4 &3883333469882810226 stripped
 Transform:
@@ -1818,7 +1864,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1216992617
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1831,6 +1877,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1

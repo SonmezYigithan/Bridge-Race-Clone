@@ -83,7 +83,7 @@ public class AIController : MonoBehaviour
         {
             // place bricks to the bridge
             targetTransform = targetBridge.transform.position;
-            Debug.Log("targetPos" + targetTransform);
+            //Debug.Log("targetPos" + targetTransform);
             agent.SetDestination(targetTransform);
             haveTarget = true;
         }
