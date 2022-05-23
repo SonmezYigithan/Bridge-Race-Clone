@@ -24,7 +24,6 @@ public class BridgeTileScript : MonoBehaviour
 
         targetColor = brickMaterials[_targetColorIndex].color;
 
-
         transform.GetChild(0).GetComponentInChildren<BoxCollider>().enabled = false;
     }
 

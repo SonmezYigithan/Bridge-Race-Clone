@@ -22,7 +22,6 @@ public class StackManager : MonoBehaviour
 
     public void Pop()
     {
-        Debug.Log("Pop");
         var objref = bricks[bricks.Count - 1].gameObject;
         bricks[bricks.Count - 1].gameObject.SetActive(false);
         bricks.RemoveAt(bricks.Count-1);
