@@ -23,9 +23,6 @@ public class BridgeConstructorScript : MonoBehaviour
         HandleBridgeConstruction();
     }
 
-    /// <summary>
-    /// Use better architecture in here
-    /// </summary>
     void HandleBridgeConstruction()
     {
         RaycastHit hit;
@@ -59,13 +56,11 @@ public class BridgeConstructorScript : MonoBehaviour
                 {
                     if (playerScript.isAI)
                     {
-                        //Debug.Log("Not Popable " + player.name);
                         player.GetComponent<AIController>().ClearTarget();
                         StartCoroutine(player.GetComponent<AIController>().GetTargets());
                     }
                     else
                     {
-                        //Debug.Log("enabled");
                         hit.transform.GetChild(0).GetComponentInChildren<BoxCollider>().enabled = true;
                     }
                 }

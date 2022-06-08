@@ -42,14 +42,12 @@ public class BrickSpawner : MonoBehaviour
 
                 while (colliders.Length != 0)
                 {
-                    //Debug.Log("overlap " + targetPos);
                     targetPos = randomizeSpawnPoint();
                     colliders = Physics.OverlapSphere(targetPos, 1f, layerMask);
                 }
 
                 var brick = Instantiate(brickPrefabs[j], targetPos, Quaternion.Euler(0, 0, 0));
                 brick.transform.parent = brickSpawnPoint.transform;
-                //spawnedBrickList.Add();
             }
         }
 
@@ -66,14 +64,12 @@ public class BrickSpawner : MonoBehaviour
 
             while (colliders.Length != 0)
             {
-                //Debug.Log("overlap " + targetPos);
                 targetPos = randomizeSpawnPoint();
                 colliders = Physics.OverlapSphere(targetPos, 1f, layerMask);
             }
 
             var brick = Instantiate(brickPrefabs[playerColorIndex], targetPos, Quaternion.Euler(0, 0, 0));
             brick.transform.parent = brickSpawnPoint.transform;
-            //spawnedBrickList.Add();
         }
 
         yield break;

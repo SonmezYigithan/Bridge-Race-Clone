@@ -12,6 +12,11 @@ public class MoveScript : MonoBehaviour
 
     private void FixedUpdate()
     {
+        HandleJoystickMovement();
+    }
+
+    void HandleJoystickMovement()
+    {
         float horizontal = joystick.Vertical;
         float vertical = joystick.Horizontal;
         Vector3 direction = new Vector3(-horizontal, 0f, vertical).normalized;
@@ -28,8 +33,6 @@ public class MoveScript : MonoBehaviour
         {
             animator.SetBool("Running", false);
         }
-
-        
     }
 
     
