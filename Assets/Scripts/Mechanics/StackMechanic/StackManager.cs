@@ -14,10 +14,7 @@ public class StackManager : MonoBehaviour
     public void Push(GameObject collectedBrick)
     {
         bricks.Add(collectedBrick);
-
         MoveToStackAnim(collectedBrick);
-
-        // spawn one brick
     }
 
     public void Pop()
@@ -60,7 +57,6 @@ public class StackManager : MonoBehaviour
 
         brick.transform.parent = stackPoint.transform;
         brick.transform.DOLocalMove(targetPosition, 0.2f);
-        //brick.transform.localPosition = targetPosition;
         brick.transform.rotation = stackPoint.transform.rotation;
     }
 

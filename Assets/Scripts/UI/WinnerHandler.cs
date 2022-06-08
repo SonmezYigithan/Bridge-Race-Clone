@@ -11,6 +11,11 @@ public class WinnerHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        AnnounceWinner(other);
+    }
+
+    void AnnounceWinner(Collider other)
+    {
         Debug.Log("Winner is " + other.gameObject.name);
         gameObject.GetComponent<Collider>().enabled = false;
         GameManager.instance.ShowWinPanel(other.gameObject.name);

@@ -71,9 +71,14 @@ public class AIController : MonoBehaviour
     void Update()
     {
         HandleRotation();
+        AIStates();
+    }
 
-        if(!haveTarget && targets.Count > 0)
+    void AIStates()
+    {
+        if (!haveTarget && targets.Count > 0)
         {
+            // move to target
             targetTransform = targets[0].gameObject.transform.position;
             agent.SetDestination(targetTransform);
             animator.SetBool("Running", true);
@@ -82,12 +87,14 @@ public class AIController : MonoBehaviour
         else if (!haveTarget && targets.Count == 0 && gameObject.GetComponent<StackManager>().isPopable())
         {
             // place bricks to the bridge
+            if (targetBridge == null)
+                return;
+
             targetTransform = targetBridge.transform.position;
-            //Debug.Log("targetPos" + targetTransform);
             agent.SetDestination(targetTransform);
             haveTarget = true;
         }
-        else if(haveTarget && targets.Count == 0 && Vector3.Distance(gameObject.transform.position, targetTransform) < 0.3f)
+        else if (haveTarget && targets.Count == 0 && Vector3.Distance(gameObject.transform.position, targetTransform) < 0.3f)
         {
             // go to next bridge
             Debug.Log("Next Area " + currentlyStandingFloor.name);
@@ -95,7 +102,6 @@ public class AIController : MonoBehaviour
             haveTarget = false;
 
         }
-
     }
 
     public void ClearTarget()

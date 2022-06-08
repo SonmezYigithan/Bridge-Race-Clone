@@ -28,7 +28,12 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(player.transform.position.y < -15)
+        ShowLosePanelIfFall();
+    }
+
+    void ShowLosePanelIfFall()
+    {
+        if (player.transform.position.y < -15)
         {
             losePanel.SetActive(true);
         }

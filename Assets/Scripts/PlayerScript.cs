@@ -9,14 +9,12 @@ public class PlayerScript : MonoBehaviour
     public GameObject currentlyStandingFloor;
     public bool isAI;
 
-    //private Color[] playerColorArray = {
-    //    new Color(255, 169, 0, 255),
-    //    new Color(248, 32, 64, 255),
-    //    new Color(126, 0, 255, 255),
-    //    new Color(0, 176, 41, 255)
-    //};
-
     private void Update()
+    {
+        FindCurrentlyStandingFloor();
+    }
+
+    void FindCurrentlyStandingFloor()
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, Mathf.Infinity))

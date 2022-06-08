@@ -9,6 +9,11 @@ public class Collectable : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
+        CollectBricks(other);
+    }
+
+    void CollectBricks(Collider other)
+    {
         if (other.transform.GetComponent<PlayerScript>().playerColor == color)
         {
             other.transform.GetComponent<StackManager>().Push(gameObject);
